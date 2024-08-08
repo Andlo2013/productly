@@ -1,0 +1,9 @@
+{%extends 'base.html'%} {%block content%}
+<h4>{{producto.nombre}}</h1>
+<div>
+  <p><strong>Stock: </strong>{{producto.stock}}</p>
+  <p><strong>Score: </strong>{{producto.puntaje}}</p>
+  <p><strong>Category: </strong>{{producto.categoria}}</p>
+  <a href="{%url 'productos:index'%}">Index</a>
+</div>
+{%endblock%}
